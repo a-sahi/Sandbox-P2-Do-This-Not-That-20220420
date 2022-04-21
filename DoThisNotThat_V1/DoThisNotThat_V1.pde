@@ -2,6 +2,7 @@
 float buttonX1, buttonY1, buttonWidth1, buttonHeight1;
 float buttonX2, buttonY2, buttonWidth2, buttonHeight2;
 float rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight;
+float ellipseX, ellipseY, ellipseXDiameter, ellipseYDiameter;
 //
 void setup() 
 {
@@ -35,10 +36,14 @@ void setup()
   buttonY2 = buttonY1;
   buttonWidth2 = buttonWidth1;
   buttonHeight2 = buttonHeight1;
-  rectDisplayX = appWidth;
-  rectDisplayY = appHeight;
-  rectDisplayWidth = appWidth;
-  rectDisplayHeight = appHeight;
+  rectDisplayX = appWidth*1/8;
+  rectDisplayY = appHeight*1/8;
+  rectDisplayWidth = buttonWidth1;
+  rectDisplayHeight = buttonWidth1;
+  ellipseX = appWidth;
+  ellipseY = appHeight;
+  ellipseXDiameter = appWidth;
+  ellipseYDiameter = appHeight;
 }//End setup
 //
 void draw() 
@@ -46,7 +51,8 @@ void draw()
   rect(buttonX1, buttonY1, buttonWidth1, buttonHeight1); //DIV: "Click Me"
   rect(buttonX2, buttonY2, buttonWidth2, buttonHeight2); //DIV: "Or Me"
   rect(rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight); //DIV: Display Rectangle
-  //rect(); //DIV: Display Circle
+  rect(ellipseX, ellipseY, ellipseXDiameter, ellipseYDiameter); //DIV: Display Circle
+  //ellipse()
 }//End draw
 //
 void keyPressed() 
