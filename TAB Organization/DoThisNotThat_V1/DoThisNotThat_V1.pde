@@ -80,7 +80,7 @@ void draw()
   fill(purple); //Ink, hexidecimal copied from Color Selector
   textAlign (CENTER, CENTER); //Allign X&Y, see Processing.org / Reference
   //Values: [LEFT | CENTER | RIGHT] & [TOP | CENTER | BOTTOM | BASELINE]
-  textFont(buttonFont, 80); //Change the number until it fits, largest font size
+  textFont(buttonFont, 20); //Change the number until it fits, largest font size
   //
   //Specific Text per button
   text(buttonText1, buttonX1, buttonY1, buttonWidth1, buttonHeight1);
