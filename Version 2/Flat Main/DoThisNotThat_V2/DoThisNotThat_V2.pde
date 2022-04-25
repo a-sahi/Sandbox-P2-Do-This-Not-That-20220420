@@ -80,8 +80,7 @@ void draw()
   fill(white);
 }//End draw
 //
-void keyPressed() 
-{
+void keyPressed() {
 }//End keyPressed
 //
 void mousePressed() 
